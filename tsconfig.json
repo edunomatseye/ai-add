@@ -2,7 +2,7 @@
   /* Base Options */
   "compilerOptions": {
     "target": "ES2021",
-    "module": "ESNext",
+    "module": "Preserve",
     "moduleResolution": "Node",
     "esModuleInterop": true,
     "skipLibCheck": true,
@@ -13,15 +13,13 @@
     "verbatimModuleSyntax": true,
     "lib": ["ES2021"],
 
+    "noEmit": true,
+
     /* Strictness */
     "strict": true,
     "noUncheckedIndexedAccess": true,
     "noImplicitOverride": false,
     "allowJs": false,
-    "outDir": "./dist",
-    "rootDir": "./src",
-    "declaration": true,
-    "declarationMap": true,
-    "sourceMap": true
+    "rootDir": "."
   }
 }
