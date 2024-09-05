@@ -1,0 +1,32 @@
+{
+  "name": "ai-add",
+  "version": "1.0.0",
+  "description": "AI Add is a project that uses AI to add numbers.",
+  "homepage": "https://github.com/edunomatseye/ai-add",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edunomatseye/ai-add.git"
+  },
+  "bugs": {
+    "url": "https://github.com/edunomatseye/ai-add/issues"
+  },
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "demo",
+    "ai",
+    "add",
+    "numbers"
+  ],
+  "author": "Edunomatseye <edunomatseye@gmail.com> (https://github.com/edunomatseye)",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "license": "MIT",
+  "devDependencies": {
+    "typescript": "^5.5.4"
+  }
+}
