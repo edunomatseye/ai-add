@@ -22,8 +22,6 @@
     "rootDir": "./src",
     "declaration": true,
     "declarationMap": true,
-    "outFile": "./dist/index.js",
-    "outExtension": ".js",
     "sourceMap": true
   }
 }
