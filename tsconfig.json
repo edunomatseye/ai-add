@@ -11,7 +11,7 @@
     "moduleDetection": "force",
     "isolatedModules": true,
     "verbatimModuleSyntax": true,
-    "lib": ["ES2021", "WebWorker"],
+    "lib": ["ES2021", "WebWorker", "DOM"],
 
     "noEmit": true,
 
