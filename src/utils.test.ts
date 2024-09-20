@@ -1,5 +1,5 @@
 import { describe, it, expect } from 'vitest';
-import { add, subtract, multiply } from './utils';
+import { add, subtract, multiply, divide } from './utils';
 
 describe('add function', () => {
   it('should correctly add two positive numbers', () => {
@@ -82,5 +82,37 @@ describe('multiply', () => {
 
   it('handles very small numbers', () => {
     expect(multiply(1e-10, 1e-10)).toBeCloseTo(1e-20);
+  });
+});
+
+describe('divide', () => {
+  it('divides two positive numbers', () => {
+    expect(divide(10, 2)).toBe(5);
+  });
+
+  it('handles division of negative numbers', () => {
+    expect(divide(-10, 2)).toBe(-5);
+    expect(divide(10, -2)).toBe(-5);
+    expect(divide(-10, -2)).toBe(5);
+  });
+
+  it('returns a decimal for non-integer division', () => {
+    expect(divide(5, 2)).toBe(2.5);
+  });
+
+  it('handles division by 1', () => {
+    expect(divide(7, 1)).toBe(7);
+  });
+
+  it('handles division of 0', () => {
+    expect(divide(0, 5)).toBe(0);
+  });
+
+  it('handles very small numbers', () => {
+    expect(divide(1e-10, 1e-5)).toBeCloseTo(1e-5);
+  });
+
+  it('throws an error when dividing by zero', () => {
+    expect(() => divide(5, 0)).toThrow('Division by zero is not allowed');
   });
 });
